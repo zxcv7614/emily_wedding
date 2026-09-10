@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Cormorant+Garamond:wght@400;500;600&display=swap');
+/* =========================
+   GOOGLE FONT
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 
 
 /* =========================
-   BASIC
-========================== */
+   RESET
+========================= */
 
 * {
     box-sizing: border-box;
@@ -18,436 +22,369 @@ html {
 
 
 body {
+    background: #f2f2f2;
 
-    background: #f4f4f4;
-
-    color: #3f3f3f;
+    color: #414141;
 
     font-family:
-        "Nanum Myeongjo",
+        "Playfair Display",
+        "Noto Serif KR",
         serif;
 
-    line-height: 1.9;
+    font-weight: 400;
 
+    line-height: 1.9;
 }
 
 
 .invitation {
-
     width: 100%;
-
     max-width: 480px;
+    min-height: 100vh;
 
     margin: 0 auto;
 
     background: #ffffff;
 
-    min-height: 100vh;
-
     overflow: hidden;
-
 }
 
 
 img {
-
     display: block;
-
     width: 100%;
-
 }
 
 
 
 /* =========================
    HERO
-========================== */
+========================= */
 
 .hero {
-
     text-align: center;
 
     background: #ffffff;
-
 }
 
 
 .hero-top {
-
-    padding:
-        42px
-        20px
-        36px;
-
+    padding: 45px 20px 38px;
 }
 
 
 .wedding-day {
-
     margin-bottom: 28px;
 
-    font-family:
-        "Playfair Display",
-        serif;
+    font-family: "Playfair Display", serif;
 
     font-size: 13px;
+    font-weight: 400;
 
     letter-spacing: 4px;
 
-    color: #8d8d8d;
-
+    color: #8b8b8b;
 }
 
 
 .save-date-card {
-
-    width: 185px;
+    width: 188px;
 
     margin: 0 auto;
 
-    padding:
-        27px
-        18px
-        23px;
+    padding: 28px 18px 24px;
 
-    border:
-        1px solid
-        #c7ced2;
-
+    border: 1px solid #c5cdd1;
 }
 
 
 .save-title {
+    font-family: "Playfair Display", serif;
 
-    font-family:
-        "Playfair Display",
-        serif;
+    font-size: 30px;
+    font-weight: 400;
 
-    font-size: 29px;
-
-    line-height: 0.9;
+    line-height: 0.95;
 
     letter-spacing: 4px;
 
-    color: #4c5357;
-
+    color: #4f565a;
 }
 
 
 .save-title span {
-
     display: block;
 
-    margin:
-        7px 0;
+    margin: 7px 0;
 
+    font-size: 18px;
     font-style: italic;
 
-    font-size: 17px;
-
     letter-spacing: 0;
-
 }
 
 
 .save-line {
-
     width: 1px;
+    height: 29px;
 
-    height: 28px;
+    margin: 18px auto;
 
-    margin:
-        17px auto;
-
-    background: #b7c2c8;
-
+    background: #b5c0c5;
 }
 
 
 .save-names {
+    font-family: "Playfair Display", serif;
 
-    white-space: nowrap;
+    font-size: 14px;
 
+    line-height: 1.6;
+
+    letter-spacing: 1px;
+
+    color: #687176;
+}
+
+
+
+/* =========================
+   HERO IMAGE
+========================= */
+
+.hero-image {
+    width: 100%;
+
+    overflow: hidden;
+
+    background: #eeeeee;
+}
+
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+
+    object-fit: cover;
+}
+
+
+
+/* =========================
+   HERO INFO
+========================= */
+
+.hero-info {
+    padding: 40px 20px 52px;
+}
+
+
+.hero-info h1 {
     font-family:
-        "Playfair Display",
+        "Noto Serif KR",
         serif;
+
+    font-size: 21px;
+    font-weight: 400;
+
+    letter-spacing: 2px;
+}
+
+
+.hero-info h1 span {
+    margin: 0 7px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 23px;
+    font-style: italic;
+
+    color: #a1afb6;
+}
+
+
+.hero-info .date {
+    margin-top: 17px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 14px;
+
+    letter-spacing: 1.5px;
+
+    color: #747474;
+}
+
+
+.hero-info .venue {
+    margin-top: 5px;
+
+    font-family: "Playfair Display", serif;
 
     font-size: 13px;
 
     letter-spacing: 1px;
 
-    color: #6f777b;
-
-}
-
-
-
-.hero-image {
-
-    width: 100%;
-
-    overflow: hidden;
-
-}
-
-
-.hero-image img {
-
-    width: 100%;
-
-    height: auto;
-
-}
-
-
-
-.hero-info {
-
-    padding:
-        38px
-        20px
-        50px;
-
-}
-
-
-.hero-info h1 {
-
-    font-size: 22px;
-
-    font-weight: 400;
-
-    letter-spacing: 2px;
-
-}
-
-
-.hero-info h1 span {
-
-    margin:
-        0 5px;
-
-    font-family:
-        "Playfair Display",
-        serif;
-
-    font-size: 22px;
-
-    color: #9daeb7;
-
-}
-
-
-.hero-info .date {
-
-    margin-top: 15px;
-
-    font-family:
-        "Playfair Display",
-        serif;
-
-    font-size: 15px;
-
-    letter-spacing: 1.5px;
-
-    color: #7b7b7b;
-
-}
-
-
-.hero-info .venue {
-
-    margin-top: 3px;
-
-    font-size: 12px;
-
-    color: #999;
-
+    color: #999999;
 }
 
 
 
 /* =========================
    COMMON SECTION
-========================== */
+========================= */
 
 .section {
-
-    padding:
-        75px
-        28px;
+    padding: 75px 28px;
 
     text-align: center;
-
 }
 
 
 .section-eng {
-
     margin-bottom: 10px;
 
-    color: #9eafb8;
-
-    font-family:
-        "Playfair Display",
-        serif;
+    font-family: "Playfair Display", serif;
 
     font-size: 13px;
+    font-weight: 500;
 
-    font-weight: 600;
+    letter-spacing: 3.5px;
 
-    letter-spacing: 3px;
-
+    color: #97aab3;
 }
 
 
 .section h2 {
-
     margin-bottom: 30px;
 
-    font-size: 18px;
+    font-family:
+        "Noto Serif KR",
+        serif;
 
+    font-size: 18px;
     font-weight: 400;
 
     letter-spacing: 1px;
-
 }
 
 
 .small-line {
-
-    width: 25px;
-
+    width: 26px;
     height: 1px;
 
-    margin:
-        0 auto
-        30px;
+    margin: 0 auto 30px;
 
-    background: #bdcbd1;
-
+    background: #b9c7cd;
 }
 
 
 
 /* =========================
-   INVITATION
-========================== */
+   INVITATION MESSAGE
+========================= */
 
 .invitation-message {
-
-    background:
-        #f8fafb;
-
+    background: #f8fafb;
 }
 
 
 .message {
+    font-family:
+        "Noto Serif KR",
+        serif;
 
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: 300;
 
-    line-height: 2.15;
+    line-height: 2.25;
 
-    color: #575757;
-
+    color: #565656;
 }
 
 
 .heart {
+    margin-top: 30px;
 
-    margin-top: 29px;
+    font-family: "Playfair Display", serif;
 
-    font-size: 20px;
+    font-size: 21px;
 
-    color: #9fb0ba;
-
+    color: #a2b2ba;
 }
 
 
 
 /* =========================
    FAMILY
-========================== */
+========================= */
 
 .family {
+    padding-top: 52px;
+    padding-bottom: 52px;
 
-    padding-top: 50px;
-
-    padding-bottom: 50px;
-
+    background: #ffffff;
 }
 
 
 .family-row {
-
     display: flex;
 
     justify-content: center;
-
     align-items: baseline;
 
     gap: 6px;
 
     margin: 12px 0;
 
-    font-size: 13px;
+    font-family:
+        "Noto Serif KR",
+        serif;
 
+    font-size: 13px;
 }
 
 
 .parents {
-
-    color: #5b5b5b;
-
+    color: #555555;
 }
 
 
 .relation {
-
     font-size: 11px;
 
-    color: #999;
-
+    color: #999999;
 }
 
 
 .family strong {
-
     font-size: 15px;
-
-    font-weight: 400;
-
+    font-weight: 500;
 }
 
 
 
 /* =========================
    GALLERY
-========================== */
+========================= */
 
 .gallery-section {
-
     background: #ffffff;
-
 }
 
 
 .gallery {
-
     display: grid;
 
-    grid-template-columns:
-        repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 
     gap: 5px;
 
     margin-top: 35px;
-
 }
 
 
 .gallery img {
-
     width: 100%;
 
     aspect-ratio: 1 / 1;
@@ -457,369 +394,325 @@ img {
     cursor: pointer;
 
     transition:
-        opacity 0.25s ease;
-
+        opacity 0.25s ease,
+        transform 0.25s ease;
 }
 
 
 .gallery img:hover {
-
-    opacity: 0.85;
-
+    opacity: 0.9;
 }
 
 
 
 /* =========================
    WEDDING INFO
-========================== */
+========================= */
 
 .wedding-info {
-
-    background:
-        #f6f9fa;
-
+    background: #f6f9fa;
 }
 
 
 .info-box {
+    margin: 35px auto;
 
-    margin:
-        35px auto;
-
-    padding:
-        10px 0;
+    padding: 10px 0;
 
     text-align: left;
-
 }
 
 
 .info-item {
-
     display: flex;
 
     align-items: center;
 
     gap: 18px;
 
-    padding:
-        15px
-        12px;
+    padding: 16px 12px;
 
-    border-bottom:
-        1px solid
-        #e5eaec;
-
+    border-bottom: 1px solid #e3e8ea;
 }
 
 
 .info-item:last-child {
-
     border-bottom: none;
-
 }
 
 
 .info-icon {
+    width: 29px;
 
-    width: 28px;
+    flex-shrink: 0;
 
     text-align: center;
 
-    color: #96aab5;
+    font-family: "Playfair Display", serif;
 
     font-size: 17px;
 
+    color: #93a7b1;
 }
 
 
 .info-item span {
-
-    font-family:
-        "Playfair Display",
-        serif;
+    font-family: "Playfair Display", serif;
 
     font-size: 10px;
+    font-weight: 500;
 
     letter-spacing: 2px;
 
-    color: #a2adb2;
-
+    color: #98a5aa;
 }
 
 
 .info-item p {
+    margin-top: 3px;
 
-    margin-top: 2px;
+    font-family:
+        "Noto Serif KR",
+        serif;
 
     font-size: 13px;
 
     line-height: 1.7;
-
 }
 
 
-.map-button {
 
+/* =========================
+   MAP BUTTON
+========================= */
+
+.map-button {
     display: inline-block;
 
     margin-top: 10px;
 
-    padding:
-        13px
-        28px;
+    padding: 13px 27px;
 
-    border:
-        1px solid
-        #aebfc7;
+    border: 1px solid #adbdc4;
 
-    color: #758c97;
+    color: #728994;
+
+    font-family:
+        "Noto Serif KR",
+        serif;
 
     font-size: 12px;
 
     text-decoration: none;
 
-    transition: 0.25s;
-
+    transition: 0.25s ease;
 }
 
 
 .map-button:hover {
+    background: #adbdc4;
 
-    background: #aebfc7;
-
-    color: white;
-
+    color: #ffffff;
 }
 
 
 
 /* =========================
    RSVP
-========================== */
+========================= */
 
 .rsvp-section {
-
-    background: white;
-
+    background: #ffffff;
 }
 
 
-.rsvp-section > p:not(.section-eng) {
+.rsvp-description {
+    font-family:
+        "Noto Serif KR",
+        serif;
 
     font-size: 13px;
 
-    line-height: 2;
+    line-height: 2.1;
 
-    color: #666;
-
+    color: #626262;
 }
 
 
 .rsvp-button {
-
     display: block;
 
     width: 220px;
 
-    margin:
-        35px auto 0;
+    margin: 36px auto 0;
 
-    padding:
-        15px
-        20px;
+    padding: 15px 20px;
 
-    background:
-        #9fafb7;
+    background: #9eafb7;
 
-    color: white;
+    color: #ffffff;
 
-    text-decoration: none;
+    font-family:
+        "Noto Serif KR",
+        serif;
 
     font-size: 13px;
 
     letter-spacing: 1px;
 
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+
+.rsvp-button:hover {
+    opacity: 0.85;
 }
 
 
 
 /* =========================
    CONTACT
-========================== */
+========================= */
 
 .contact-section {
-
-    background:
-        #f7f9fa;
-
+    background: #f7f9fa;
 }
 
 
 .contact-wrap {
-
     display: flex;
 
     justify-content: center;
-
     align-items: stretch;
 
-    margin-top: 35px;
-
+    margin-top: 36px;
 }
 
 
 .contact-person {
-
     flex: 1;
 
     text-align: center;
-
 }
 
 
 .contact-person > span {
-
     display: block;
 
     margin-bottom: 7px;
 
-    color: #9babb3;
-
-    font-family:
-        "Playfair Display",
-        serif;
+    font-family: "Playfair Display", serif;
 
     font-size: 11px;
 
     letter-spacing: 2px;
 
+    color: #96a8b0;
 }
 
 
 .contact-person strong {
-
     display: block;
 
-    margin-bottom: 15px;
+    margin-bottom: 16px;
+
+    font-family:
+        "Noto Serif KR",
+        serif;
 
     font-size: 15px;
-
     font-weight: 400;
-
 }
 
 
 .contact-divider {
-
     width: 1px;
 
-    margin:
-        0 20px;
+    margin: 0 20px;
 
-    background: #dde3e6;
-
+    background: #dce3e6;
 }
 
 
 .contact-buttons {
-
     display: flex;
 
     justify-content: center;
 
     gap: 7px;
-
 }
 
 
 .contact-buttons a {
+    padding: 7px 11px;
 
-    padding:
-        7px
-        10px;
+    border: 1px solid #c5d0d4;
 
-    border:
-        1px solid
-        #c7d1d5;
+    color: #72868f;
 
-    color: #76888f;
+    font-family:
+        "Noto Serif KR",
+        serif;
 
     font-size: 10px;
 
     text-decoration: none;
-
 }
 
 
 
 /* =========================
    ENDING
-========================== */
+========================= */
 
 .ending {
-
-    padding:
-        65px
-        20px;
+    padding: 70px 20px;
 
     text-align: center;
 
     background: #ffffff;
-
 }
 
 
-.ending p {
+.ending-names {
+    font-family: "Playfair Display", serif;
 
-    font-family:
-        "Playfair Display",
-        serif;
-
-    font-size: 18px;
+    font-size: 19px;
 
     letter-spacing: 1px;
-
 }
 
 
-.ending p span {
+.ending-names span {
+    margin: 0 8px;
 
-    margin:
-        0 7px;
-
-    color: #b8c7cd;
-
+    color: #b3c2c8;
 }
 
 
 .ending small {
-
     display: block;
 
-    margin-top: 7px;
+    margin-top: 9px;
 
-    color: #aaa;
-
-    font-family:
-        "Playfair Display",
-        serif;
+    font-family: "Playfair Display", serif;
 
     font-size: 11px;
 
     letter-spacing: 2px;
 
+    color: #999999;
 }
 
 
 
 /* =========================
    PHOTO MODAL
-========================== */
+========================= */
 
 .photo-modal {
-
     position: fixed;
 
     inset: 0;
@@ -827,87 +720,72 @@ img {
     display: none;
 
     align-items: center;
-
     justify-content: center;
 
-    z-index: 1000;
+    z-index: 9999;
 
     padding: 20px;
 
-    background:
-        rgba(0, 0, 0, 0.88);
-
+    background: rgba(0, 0, 0, 0.9);
 }
 
 
 .photo-modal.active {
-
     display: flex;
-
 }
 
 
 .photo-modal img {
+    width: auto;
 
     max-width: 100%;
-
     max-height: 90vh;
 
     object-fit: contain;
-
 }
 
 
 .close-modal {
-
     position: absolute;
 
     top: 15px;
-
     right: 20px;
 
     border: none;
 
     background: transparent;
 
-    color: white;
+    color: #ffffff;
 
-    font-size: 36px;
+    font-family: "Playfair Display", serif;
 
-    font-weight: 200;
+    font-size: 38px;
+    font-weight: 300;
 
     cursor: pointer;
-
 }
 
 
 
 /* =========================
    MOBILE
-========================== */
+========================= */
 
 @media (max-width: 480px) {
 
     .section {
-
         padding-left: 25px;
-
         padding-right: 25px;
-
     }
 
 
     .hero-info h1 {
-
         font-size: 20px;
-
     }
 
 
     .gallery {
-
         gap: 4px;
-
     }
 
 }
