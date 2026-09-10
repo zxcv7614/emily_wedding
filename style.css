@@ -1,0 +1,913 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Cormorant+Garamond:wght@400;500;600&display=swap');
+
+
+/* =========================
+   BASIC
+========================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    background: #f4f4f4;
+
+    color: #3f3f3f;
+
+    font-family:
+        "Nanum Myeongjo",
+        serif;
+
+    line-height: 1.9;
+
+}
+
+
+.invitation {
+
+    width: 100%;
+
+    max-width: 480px;
+
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    min-height: 100vh;
+
+    overflow: hidden;
+
+}
+
+
+img {
+
+    display: block;
+
+    width: 100%;
+
+}
+
+
+
+/* =========================
+   HERO
+========================== */
+
+.hero {
+
+    text-align: center;
+
+    background: #ffffff;
+
+}
+
+
+.hero-top {
+
+    padding:
+        42px
+        20px
+        36px;
+
+}
+
+
+.wedding-day {
+
+    margin-bottom: 28px;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+    color: #8d8d8d;
+
+}
+
+
+.save-date-card {
+
+    width: 185px;
+
+    margin: 0 auto;
+
+    padding:
+        27px
+        18px
+        23px;
+
+    border:
+        1px solid
+        #c7ced2;
+
+}
+
+
+.save-title {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 29px;
+
+    line-height: 0.9;
+
+    letter-spacing: 4px;
+
+    color: #4c5357;
+
+}
+
+
+.save-title span {
+
+    display: block;
+
+    margin:
+        7px 0;
+
+    font-style: italic;
+
+    font-size: 17px;
+
+    letter-spacing: 0;
+
+}
+
+
+.save-line {
+
+    width: 1px;
+
+    height: 28px;
+
+    margin:
+        17px auto;
+
+    background: #b7c2c8;
+
+}
+
+
+.save-names {
+
+    white-space: nowrap;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+
+    color: #6f777b;
+
+}
+
+
+
+.hero-image {
+
+    width: 100%;
+
+    overflow: hidden;
+
+}
+
+
+.hero-image img {
+
+    width: 100%;
+
+    height: auto;
+
+}
+
+
+
+.hero-info {
+
+    padding:
+        38px
+        20px
+        50px;
+
+}
+
+
+.hero-info h1 {
+
+    font-size: 22px;
+
+    font-weight: 400;
+
+    letter-spacing: 2px;
+
+}
+
+
+.hero-info h1 span {
+
+    margin:
+        0 5px;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 22px;
+
+    color: #9daeb7;
+
+}
+
+
+.hero-info .date {
+
+    margin-top: 15px;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 15px;
+
+    letter-spacing: 1.5px;
+
+    color: #7b7b7b;
+
+}
+
+
+.hero-info .venue {
+
+    margin-top: 3px;
+
+    font-size: 12px;
+
+    color: #999;
+
+}
+
+
+
+/* =========================
+   COMMON SECTION
+========================== */
+
+.section {
+
+    padding:
+        75px
+        28px;
+
+    text-align: center;
+
+}
+
+
+.section-eng {
+
+    margin-bottom: 10px;
+
+    color: #9eafb8;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+}
+
+
+.section h2 {
+
+    margin-bottom: 30px;
+
+    font-size: 18px;
+
+    font-weight: 400;
+
+    letter-spacing: 1px;
+
+}
+
+
+.small-line {
+
+    width: 25px;
+
+    height: 1px;
+
+    margin:
+        0 auto
+        30px;
+
+    background: #bdcbd1;
+
+}
+
+
+
+/* =========================
+   INVITATION
+========================== */
+
+.invitation-message {
+
+    background:
+        #f8fafb;
+
+}
+
+
+.message {
+
+    font-size: 14px;
+
+    line-height: 2.15;
+
+    color: #575757;
+
+}
+
+
+.heart {
+
+    margin-top: 29px;
+
+    font-size: 20px;
+
+    color: #9fb0ba;
+
+}
+
+
+
+/* =========================
+   FAMILY
+========================== */
+
+.family {
+
+    padding-top: 50px;
+
+    padding-bottom: 50px;
+
+}
+
+
+.family-row {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: baseline;
+
+    gap: 6px;
+
+    margin: 12px 0;
+
+    font-size: 13px;
+
+}
+
+
+.parents {
+
+    color: #5b5b5b;
+
+}
+
+
+.relation {
+
+    font-size: 11px;
+
+    color: #999;
+
+}
+
+
+.family strong {
+
+    font-size: 15px;
+
+    font-weight: 400;
+
+}
+
+
+
+/* =========================
+   GALLERY
+========================== */
+
+.gallery-section {
+
+    background: #ffffff;
+
+}
+
+
+.gallery {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 5px;
+
+    margin-top: 35px;
+
+}
+
+
+.gallery img {
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+
+    cursor: pointer;
+
+    transition:
+        opacity 0.25s ease;
+
+}
+
+
+.gallery img:hover {
+
+    opacity: 0.85;
+
+}
+
+
+
+/* =========================
+   WEDDING INFO
+========================== */
+
+.wedding-info {
+
+    background:
+        #f6f9fa;
+
+}
+
+
+.info-box {
+
+    margin:
+        35px auto;
+
+    padding:
+        10px 0;
+
+    text-align: left;
+
+}
+
+
+.info-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding:
+        15px
+        12px;
+
+    border-bottom:
+        1px solid
+        #e5eaec;
+
+}
+
+
+.info-item:last-child {
+
+    border-bottom: none;
+
+}
+
+
+.info-icon {
+
+    width: 28px;
+
+    text-align: center;
+
+    color: #96aab5;
+
+    font-size: 17px;
+
+}
+
+
+.info-item span {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    color: #a2adb2;
+
+}
+
+
+.info-item p {
+
+    margin-top: 2px;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+}
+
+
+.map-button {
+
+    display: inline-block;
+
+    margin-top: 10px;
+
+    padding:
+        13px
+        28px;
+
+    border:
+        1px solid
+        #aebfc7;
+
+    color: #758c97;
+
+    font-size: 12px;
+
+    text-decoration: none;
+
+    transition: 0.25s;
+
+}
+
+
+.map-button:hover {
+
+    background: #aebfc7;
+
+    color: white;
+
+}
+
+
+
+/* =========================
+   RSVP
+========================== */
+
+.rsvp-section {
+
+    background: white;
+
+}
+
+
+.rsvp-section > p:not(.section-eng) {
+
+    font-size: 13px;
+
+    line-height: 2;
+
+    color: #666;
+
+}
+
+
+.rsvp-button {
+
+    display: block;
+
+    width: 220px;
+
+    margin:
+        35px auto 0;
+
+    padding:
+        15px
+        20px;
+
+    background:
+        #9fafb7;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+
+}
+
+
+
+/* =========================
+   CONTACT
+========================== */
+
+.contact-section {
+
+    background:
+        #f7f9fa;
+
+}
+
+
+.contact-wrap {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    margin-top: 35px;
+
+}
+
+
+.contact-person {
+
+    flex: 1;
+
+    text-align: center;
+
+}
+
+
+.contact-person > span {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #9babb3;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.contact-person strong {
+
+    display: block;
+
+    margin-bottom: 15px;
+
+    font-size: 15px;
+
+    font-weight: 400;
+
+}
+
+
+.contact-divider {
+
+    width: 1px;
+
+    margin:
+        0 20px;
+
+    background: #dde3e6;
+
+}
+
+
+.contact-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 7px;
+
+}
+
+
+.contact-buttons a {
+
+    padding:
+        7px
+        10px;
+
+    border:
+        1px solid
+        #c7d1d5;
+
+    color: #76888f;
+
+    font-size: 10px;
+
+    text-decoration: none;
+
+}
+
+
+
+/* =========================
+   ENDING
+========================== */
+
+.ending {
+
+    padding:
+        65px
+        20px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+}
+
+
+.ending p {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 18px;
+
+    letter-spacing: 1px;
+
+}
+
+
+.ending p span {
+
+    margin:
+        0 7px;
+
+    color: #b8c7cd;
+
+}
+
+
+.ending small {
+
+    display: block;
+
+    margin-top: 7px;
+
+    color: #aaa;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+}
+
+
+
+/* =========================
+   PHOTO MODAL
+========================== */
+
+.photo-modal {
+
+    position: fixed;
+
+    inset: 0;
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    z-index: 1000;
+
+    padding: 20px;
+
+    background:
+        rgba(0, 0, 0, 0.88);
+
+}
+
+
+.photo-modal.active {
+
+    display: flex;
+
+}
+
+
+.photo-modal img {
+
+    max-width: 100%;
+
+    max-height: 90vh;
+
+    object-fit: contain;
+
+}
+
+
+.close-modal {
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 20px;
+
+    border: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 36px;
+
+    font-weight: 200;
+
+    cursor: pointer;
+
+}
+
+
+
+/* =========================
+   MOBILE
+========================== */
+
+@media (max-width: 480px) {
+
+    .section {
+
+        padding-left: 25px;
+
+        padding-right: 25px;
+
+    }
+
+
+    .hero-info h1 {
+
+        font-size: 20px;
+
+    }
+
+
+    .gallery {
+
+        gap: 4px;
+
+    }
+
+}

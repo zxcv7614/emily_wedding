@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        RSVP | Taeyoon & Minyoung
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="rsvp.css">
+
+</head>
+
+
+<body>
+
+
+<main class="rsvp-page">
+
+
+    <section class="rsvp-header">
+
+        <p class="eng">
+            RSVP
+        </p>
+
+        <h1>
+            참석 여부를 알려주세요
+        </h1>
+
+
+        <div class="line"></div>
+
+
+        <p class="description">
+
+            저희 두 사람의 소중한 날을<br>
+            함께해 주셔서 감사합니다.
+            <br><br>
+
+            원활한 예식 준비를 위해<br>
+            참석 여부를 작성해 주세요.
+
+        </p>
+
+
+        <p class="wedding-date">
+            FEBRUARY 13, 2027
+        </p>
+
+    </section>
+
+
+
+    <form id="rsvpForm">
+
+
+        <!-- NAME -->
+
+        <div class="form-group">
+
+            <label for="name">
+                성함
+            </label>
+
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="성함을 입력해 주세요"
+                required>
+
+        </div>
+
+
+
+        <!-- SIDE -->
+
+        <div class="form-group">
+
+            <label>
+                어느 쪽 하객이신가요?
+            </label>
+
+
+            <div class="choice-wrap">
+
+                <label class="choice">
+
+                    <input
+                        type="radio"
+                        name="side"
+                        value="신랑측"
+                        required>
+
+                    <span>
+                        신랑측
+                    </span>
+
+                </label>
+
+
+                <label class="choice">
+
+                    <input
+                        type="radio"
+                        name="side"
+                        value="신부측">
+
+                    <span>
+                        신부측
+                    </span>
+
+                </label>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ATTENDANCE -->
+
+        <div class="form-group">
+
+            <label>
+                참석 여부
+            </label>
+
+
+            <div class="choice-wrap">
+
+                <label class="choice">
+
+                    <input
+                        type="radio"
+                        name="attendance"
+                        value="참석"
+                        required>
+
+                    <span>
+                        참석합니다
+                    </span>
+
+                </label>
+
+
+                <label class="choice">
+
+                    <input
+                        type="radio"
+                        name="attendance"
+                        value="불참">
+
+                    <span>
+                        참석이 어렵습니다
+                    </span>
+
+                </label>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- NUMBER -->
+
+        <div
+            class="form-group"
+            id="guestGroup">
+
+            <label for="guests">
+                참석 인원
+            </label>
+
+            <select
+                id="guests"
+                name="guests">
+
+                <option value="1">
+                    1명
+                </option>
+
+                <option value="2">
+                    2명
+                </option>
+
+                <option value="3">
+                    3명
+                </option>
+
+                <option value="4">
+                    4명
+                </option>
+
+                <option value="5">
+                    5명 이상
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <!-- MESSAGE -->
+
+        <div class="form-group">
+
+            <label for="message">
+                신랑 신부에게 한마디
+            </label>
+
+            <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="축하 메시지를 남겨주세요"></textarea>
+
+        </div>
+
+
+
+        <button
+            type="submit"
+            id="submitButton">
+
+            참석 여부 전달하기
+
+        </button>
+
+
+    </form>
+
+
+
+    <!-- RESULT -->
+
+    <div
+        id="successMessage"
+        class="success-message">
+
+        <div class="heart">
+            ♡
+        </div>
+
+        <h2>
+            감사합니다
+        </h2>
+
+        <p>
+            소중한 답변이 전달되었습니다.
+        </p>
+
+
+        <a href="index.html">
+            청첩장으로 돌아가기
+        </a>
+
+    </div>
+
+
+</main>
+
+
+<script src="rsvp.js"></script>
+
+</body>
+
+</html>
